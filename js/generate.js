@@ -38,23 +38,23 @@ function hardCodedRandomString() {
     if (randomBool()) {
         return randomSound(randomBool()) +
             randomNumString(randomRange(4, 2)) +
-            randomSound(randomBool());
+            randomSound(randomBool()); // 11-13
     } else if (randomBool()) {
         return randomSound(randomBool()) +
             randomNumString(randomRange(2, 2)) +
             randomSound(randomBool()) +
-            randomNumString(randomRange(2, 2));
+            randomNumString(randomRange(2, 2)); // 12-16
     } else {
         return randomSound(randomBool()) +
             randomNumString(randomRange(2, 2)) +
             randomSound(randomBool()) +
             randomNumString(randomRange(2, 2)) +
-            randomSound(randomBool());
+            randomSound(randomBool()); // 15-19
     }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("button").onclick = function(e){
-        document.getElementById("text").value = hardCodedRandomString();
+    document.getElementById("generateButton").onclick = function(e){
+        document.getElementById("randomStringGenerated").value = hardCodedRandomString();
     }
 });
