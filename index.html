@@ -9,13 +9,25 @@
     <input type="text" id="maxLength" value="19"/>
     <br/>
 <label>Lowercase:</label>
-    <input type="text" id="lower" value="allowed"/>
+    <select id="lower">
+        <option value="0">none</option>
+        <option value="1" selected=true>allowed</option>
+        <option value="2">required</option>
+    </select>
     <br/>
 <label>Uppercase:</label>
-    <input type="text" id="upper" value="allowed"/>
+    <select id="upper">
+        <option value="0">none</option>
+        <option value="1" selected=true>allowed</option>
+        <option value="2">required</option>
+    </select>
     <br/>
 <label>Special Chars:</label>
-    <input type="text" id="special" value="none"/>
+    <select id="specialc">
+        <option value="0" selected=true>none</option>
+        <option value="1">allowed</option>
+        <option value="2">required</option>
+    </select>
     <br/>
 
 <script src="js/generate.js"></script>
